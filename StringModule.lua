@@ -16,7 +16,7 @@ local function RemoveNumbers(Input)
 	return ""
 end
 
-function Module:RemoveNumbers(Input)
+function Module:ToString(Input)
 	if typeof(Input) == "string" then
 		local Split = string.split(Input,"")
 		local NewString = ""
@@ -42,7 +42,7 @@ local function RemoveLetters(Input)
 	return ""
 end
 
-function Module:RemoveLetters(Input)
+function Module:ToNumber(Input)
 	if typeof(Input) == "number" then
 		return Input
 	elseif typeof(Input) == "string" then
